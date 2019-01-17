@@ -64,7 +64,7 @@ def eat_helper(M, visited, curr, num_carrots):
 def eat(M):
   num_row = len(M)
   num_col = len(M[0])
-  visited = {(i, j) : 0 for i in range(num_row) for j in range(num_row) }
+  visited = {(i, j) : 0 for i in range(num_row) for j in range(num_col) }
 
   curr = find_center(M)
   return eat_helper(M, visited, curr, 0)
